@@ -1,0 +1,24 @@
+{
+  "name": "phalapi/session",
+  "description": "PhalApi 2.x 扩展类库：Session 操作工具",
+  "type": "library",
+  "keywords": [
+    "phalapi", "phalapi-session", "session"
+  ],
+  "license": "GPL-3.0+",
+  "minimum-stability": "dev",
+  "homepage": "https://www.acgmuse.com/",
+  "authors": [
+    {
+      "name": "pluvet",
+      "email": "i@pluvet.com",
+      "homepage": "https://www.pluvet.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PhalApi\\Session\\": "src"
+    }
+  }
+}
