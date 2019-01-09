@@ -6,9 +6,8 @@
 使用方法:
 
 ```php
-use PhalApi\Session;
-
-\PhalApi\DI()->session = new Session\Lite();
+//建议写到config/di.php里面
+\PhalApi\DI()->session = new \PhalApi\Session\Lite();
 
 //设置:
 \PhalApi\DI()->session->你的自定义字段名称=值;
