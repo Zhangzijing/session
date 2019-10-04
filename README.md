@@ -8,6 +8,7 @@
 ```php
 //建议写到config/di.php里面
 \PhalApi\DI()->session = new \PhalApi\Session\Lite();
+// or: $di->session = new \PhalApi\Session\Lite();
 
 //设置:
 \PhalApi\DI()->session->你的自定义字段名称=值;
@@ -16,10 +17,10 @@
 $val = \PhalApi\DI()->session->你的自定义字段名称;
 
 //销毁:
-\PhalApi\DI()->destroy()
+\PhalApi\DI()->session->destroy()
 
 //获取session_id
-$val = \PhalApi\DI()->session_id;
+$val = \PhalApi\DI()->session->session_id;
 
 
 ```
